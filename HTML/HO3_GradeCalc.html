@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <header>
+    <title>Direcho Trabaho Grade Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../JS/HO3_GradeCalc.js"></script>
+  </header>
+  <body>
+    <header>
+    </header>
+    <main>
+      <label for="project">Project: </label>
+      <input type="number" id="project" name="project" min="0" max="25"/>
+
+      <label for="quiz">Quiz: </label>
+      <input type="number" id="quiz" name="quiz" min="0" max="15"/>
+
+      <label for="midterm">Midterm: </label>
+      <input type="number" id="midterm" name="midterm" min="0" max="25"/>
+
+      <label for="final">Final: </label>
+      <input type="number" id="final" name="final" min="0" max="25"/>
+
+      <label for="activities">Activities: </label>
+      <input type="number" id="activities" name="activities" min="0" max="10"/>
+
+      <button onclick="getAve()">Compute Grade</button>
+
+      <p id="results" hidden></p>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
