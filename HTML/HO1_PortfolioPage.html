@@ -5,52 +5,91 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/HO1_PortfolioPage.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
   </head>
   <body>
     <header>
       <nav id="navbar">
         <a href="#notable-projects">Notable Projects</a>
-        <a href="#other-skills">Skills</a>
+        <a href="#skills">Skills</a>
+        <a href="#socials">Socials</a>
       </nav>
     </header>
     <main>
       <section id="about-me">
-        <h1>Timothy Magno</h1>
-        <p>Greetings! I am an aspiring full-stack developer currently learning the 
-          fundamentals of front-end development to kick-start my developer journey. 
-          Although I do not possess the creativity for UI/UX design, my passion lies in 
-          having the scrupulousness and determination to pro  duce correct and satisfactory 
-          results, as well as to perfectly and cleanly materialize the designer's vision of 
-          the product. Still, passion and perseverance can only take me part of the way 
-          without the relevant experiences, which is why I am also open to being trained. 
-          If you are interested, let's talk!
-        </p>
+        <div>
+          <h1>Timothy Magno</h1>
+          <p>Greetings! I am an aspiring full-stack developer currently learning the 
+            fundamentals of front-end development to kick-start my developer journey. 
+            Although I do not possess the creativity for UI/UX design, my passion lies in 
+            having the scrupulousness and determination to produce correct and satisfactory 
+            results, as well as to perfectly and cleanly materialize the designer's vision of 
+            the product. Still, passion and perseverance can only take me part of the way 
+            without the relevant experiences, which is why I am also open to being trained. 
+            If you are interested, let's talk!
+          </p>
+        </div>
       </section>
       <section id="notable-projects">
-        <h2>Notable Projects</h2>
-        <article id="alum-tracker" class="project-tile">
-          <h3>Alumni Details Form</h3>
-          <p>
-          </p>
-        </article>
-        <article id="funiki" class="project-tile">
-          <h3>Fun'iki</h3>          
-          <p>An IoT solution designed to optimize an infant's sleep environment 
-            effortlessly. It features wireless control of: lighting intensity and 
-            color, sound playback for soothing music or white noise, rotation of 
-            nursery toy for entertainment and stimulation, as well as issuing 
-            parental alerts for abnormal environmental conditions or disturbances 
-            detected during sleep.
-          </p>
-        </article>
+        <div>
+          <h2>Notable Projects</h2>
+          <article id="alum-tracker" class="project-tile">
+            <h3>Alumni Details Form</h3>
+            <p>A form-answering webpage to keep track of Alumni credentials. After 
+              submission, respondents receive unique IDs that they can use to update 
+              their credentials. Cloud Firestore Database houses the data collected 
+              and is exclusively accessible by the department's admin. The admin is 
+              capable of editing and deleting entries, but only with the owner's 
+              consent. Additionally, they can query existing entries for purposes such 
+              as data analysis and back up the database into a Google Sheets file for 
+              safekeeping. Firebase Authentication handles the admin's login logistics.
+            </p>
+          </article>
+          <article id="funiki" class="project-tile">
+            <h3>Fun'iki</h3>          
+            <p>An IoT solution designed to optimize an infant's sleep environment 
+              effortlessly. It features wireless control of: lighting intensity and 
+              color, sound playback for soothing music or white noise, rotation of 
+              nursery toy for entertainment and stimulation, as well as issuing 
+              parental alerts for abnormal environmental conditions or disturbances 
+              detected during sleep.
+            </p>
+          </article>          
+        </div>
       </section>
-      <section id="other-skills">
-        <h2>Other skills</h2>
+      <section id="skills">
+        <div>
+          <h2>Skills</h2>
+          <div>
+            <figure>
+              <figcaption>Working knowledge of:</figcaption>
+              <ul>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Arduino</li>
+                <li>Assembly Language</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+              </ul>
+            </figure>
+            <figure>
+              <figcaption>Currently learning:</figcaption>
+              <ul>
+                <li>JavaScript</li>
+              </ul>
+            </figure>          
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
+    <hr>
+    <footer id="socials">
       <h2>Timothy Magno</h2>
+      <div>
+        <a href="mailto:ichimaruichiyon@gmail.com?subject=[PORTFOLIO VISITOR] --INSERT DESIRED TOPIC HERE-" target="_blank">ichimaruichiyon@gmail.com</a>
+        <a href="https://github.com/108-Tim" class="fab fa-github" target="_blank">108-Tim</a>
+      </div>
     </footer>
   </body>
 </html>
-

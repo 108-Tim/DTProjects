@@ -1,0 +1,137 @@
+:root {
+  scroll-behavior: smooth;
+  --header-height: 10vh;
+  --bg-color-main: rgb(36, 36, 36);
+  --bg-color-sub: rgb(24,24,24);
+  --hdr-ftr-color: rgb(18,18,18);
+  --link-color-act: linen;
+  --link-color-inact: cyan;
+  --keyword-color: palevioletred;
+  --textword-color: greenyellow;
+  --divider-color: beige;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color-main);
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: var(--header-height);
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--hdr-ftr-color);
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a {
+  color: var(--link-color-act);
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+a:hover, a:focus{
+  color:var(--link-color-inact);
+  text-decoration: underline;
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, h3 {
+  color: var(--keyword-color);
+}
+
+p, figure {
+  color: var(--textword-color);
+}
+
+section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:nth-child(even) {
+  background-color: var(--bg-color-sub);
+}
+
+section > div {
+  display: flex;  
+  flex-direction: column;
+}
+
+#about-me > div {
+  width: 50vw;
+  height: calc(100vh - var(--header-height));
+  justify-content: center;
+  margin-inline-start: -25vw;
+}
+
+h1 {
+  font-size: 3em;
+  margin-block: 0;
+}
+
+#notable-projects > div {
+  width: 75%;
+  height: 100vh;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3, figcaption {
+  font-size: 1.5em;
+}
+
+#skills > div {
+  width: 50%;
+  height: 75vh;
+  align-items: center;
+}
+
+#skills > div > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+hr {
+  width: 100vw;
+  color: var(--divider-color);
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--hdr-ftr-color);
+}
+
+footer div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-block-end: 2.5vh;
+}
