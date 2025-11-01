@@ -22,35 +22,38 @@ function handleSubmission(event) {
 
 function createTable(formData) {
   const table = document.createElement("table");
+  const thead = document.createElement("thead");
+  const tbody = document.createElement("tbody");
   const headerRow = document.createElement("tr");
 
-  table.appendChild(headerRow);
+  table.appendChild(thead);
+  thead.appendChild(headerRow);
 
   for (const key of formData.keys()) {
-    const thead = document.createElement("th");
+    const theader = document.createElement("th");
     const headerTitle = key.split("-").join(" ");
 
-    thead.textContent = headerTitle;
-    headerRow.appendChild(thead);
+    theader.textContent = headerTitle;
+    headerRow.appendChild(theader);
   }
 
+  table.appendChild(tbody);
   document.getElementById("table-wrapper").appendChild(table);
 }
 
 function addRow(formData) {
-  const table = document.querySelector("table");
+  const tbody = document.querySelector("tbody");
   const dataRow = document.createElement("tr");
 
   for (const value of formData.values()) {
     const tdata = document.createElement("td");
     const data = value.split("/[ ]+/").join(" ");
 
-    console.log(data);
     tdata.textContent = titleCase(data);
     dataRow.appendChild(tdata);
   }
 
-  table.appendChild(dataRow);
+  tbody.appendChild(dataRow);
 }
 
 function titleCase(str) {
